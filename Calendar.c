@@ -2,8 +2,11 @@
 
 int main()
 {
-    // char str[12][10] = {"Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"};
-    // // int days_in_month[12] = {
+    char str[12][10] = {"Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"};
+    for(int i=0;i<12;i++){
+        printf("%s ",str[i]);
+    }
+    // int days_in_month[12] = {
     //     31, // January
     //     28, // February
     //     31, // March
@@ -45,38 +48,38 @@ int main()
     // printf("The day on %d is %s.", date, days_of_week[(day+index)%7]);
 
 
-    char days_of_week[7][4] = {
-    "Sun" ,  // Sunday
-    "Mon",  // Monday
-    "Tue",  // Tuesday
-    "Wed",  // Wednesday
-    "Thu",  // Thursday
-    "Fri",  // Friday
-    "Sat",  // Saturday
-};
-int start_day;
-    printf("Enter the day on the first day of the month:");
-    scanf("%d", &start_day);
-    printf("The day is:%s", days_of_week[start_day]);
-    printf("\n");
+//     char days_of_week[7][4] = {
+//     "Sun" ,  // Sunday
+//     "Mon",  // Monday
+//     "Tue",  // Tuesday
+//     "Wed",  // Wednesday
+//     "Thu",  // Thursday
+//     "Fri",  // Friday
+//     "Sat",  // Saturday
+// };
+// int start_day;
+//     printf("Enter the day on the first day of the month:");
+//     scanf("%d", &start_day);
+//     printf("The day is:%s", days_of_week[start_day]);
+//     printf("\n");
 
-for(int i=0;i<7;i++){
-    printf("%s ",days_of_week[i]);
-}
-printf("\n");
-for(int i=1;i<=(start_day%7);i++){
-    for(int j=0;j<4;j++){
-        printf(" ");
-    }
-}
-for(int i=1;i<=30;i++){
-    if(i<10)printf("0%d  ",i);
-    else{
-    printf("%d  ",i);
-    }
-    // printf("  ");
-    if((i+start_day)%7==0)
-    printf("\n");
-}
+// for(int i=0;i<7;i++){
+//     printf("%s ",days_of_week[i]);
+// }
+// printf("\n");
+// for(int i=1;i<=(start_day%7);i++){
+//     for(int j=0;j<4;j++){
+//         printf(" ");
+//     }
+// }
+// for(int i=1;i<=30;i++){
+//     if(i<10)printf("0%d  ",i);
+//     else{
+//     printf("%d  ",i);
+//     }
+//     // printf("  ");
+//     if((i+start_day)%7==0)
+//     printf("\n");
+// }
     return 0;
 }
